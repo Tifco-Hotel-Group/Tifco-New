@@ -269,6 +269,8 @@ nav.navbar.navbar-default {
 }
 
 
+
+
 .subpage-nav ul > li a {
     border-bottom: 1px solid #fff;
 }
@@ -538,6 +540,11 @@ ul.sub{
     margin-bottom: 2em;
     border-top: 4px solid #28364D;
 }
+
+.timeline_container{
+    display: none;
+}
+
 .cd-timeline-block:first-child {
     margin-top: 0;
 }
