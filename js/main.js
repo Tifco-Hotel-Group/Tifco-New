@@ -296,27 +296,19 @@ $('li.color_changer a').click(function(){
     var whatColor = $('nav.navbar.navbar-default').attr("class").split(" ").pop();
     var linkTo = $(this).attr("class");
 
+    if(whatColor != linkTo){
     //$(window).scrollTop();  
     $('.bg_change').addClass(linkTo).removeClass(whatColor);
-    /*
-    $('nav.navbar.navbar-default').addClass(linkTo).removeClass(whatColor);
-    $('.navbar-brand-img').addClass(linkTo).removeClass(whatColor);
-    $('.slider_container').addClass(linkTo).removeClass(whatColor);
-    $('footer').addClass(linkTo).removeClass(whatColor);
-    */
 
     $('.changed_color').text(linkTo);
+    }
     
-    if ($(this).hasClass("navy")) {
-    
+    if ($(this).hasClass("navy")) {    
     $('.navbar-brand-img').attr('src','img/tifco-logo-with-navy-bg.png');
-
     }
 
     else {
-
     $('.navbar-brand-img').attr('src','img/tifco-logo-for-gold-2.png');
-
     }      
 
 
