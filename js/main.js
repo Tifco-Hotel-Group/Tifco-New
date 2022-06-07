@@ -289,6 +289,28 @@ $('.image_box').mouseleave(function(){
 
 });
 
+
+
+$('li.color_changer a.gold').click(function(){
+
+    $('nav.navbar.navbar-default').addClass('navy_bg_change').removeClass('gold_bg_change');
+    $('.navbar-brand-img').addClass('navy_bg_change').removeClass('gold_bg_change');
+    $('.slider_container').addClass('navy_bg_change').removeClass('gold_bg_change');
+    $('.navbar-brand-img').attr('src','img/tifco-logo-with-navy-bg.png');
+
+
+});
+
+$('li.color_changer a.navy').click(function(){
+
+    $('nav.navbar.navbar-default').addClass('gold_bg_change').removeClass('navy_bg_change');
+    $('.navbar-brand-img').addClass('gold_bg_change').removeClass('navy_bg_change');
+    $('.slider_container').addClass('gold_bg_change').removeClass('navy_bg_change');
+    $('.navbar-brand-img').attr('src','img/tifco-logo-for-gold-2.png');
+
+
+});
+
 /*
 
 $('.image_box').mouseover(function(){
@@ -336,5 +358,26 @@ setTimeout(function(){
 
 
 */
+
+    $('.multiple-items').each(function() {
+  var slider = $(this);
+  slider.slick({
+    slidesToShow: 4,
+  slidesToScroll: 1,
+  centerMode: true,
+  focusOnSelect: true,
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }]
+  });
+
+});
 
 

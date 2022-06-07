@@ -2,6 +2,10 @@
    Author's custom styles
    ========================================================================== */
 
+
+
+
+
 body {
     color: #28364D;
     font-family: 'Raleway', sans-serif;
@@ -153,14 +157,17 @@ nav.navbar.navbar-default {
 
 .navbar-brand > img {
     height: 130px;
-    background-color: #A49C87;
     padding: 10px;
     transition: height, 0.5s;
 }
 
+.navbar-brand-img{
+    background-color: #A49C87;
+}
+
 .smaller-nav .navbar-brand > img {
     height: 130px;
-    background-color: #A49C87;
+    /*background-color: #A49C87;*/
     padding: 10px;
     transition: height, 0.5s;
 }
@@ -1025,4 +1032,34 @@ ul.social li.nums {
     z-index: 98;
     opacity: 0.9;
     transition: height, 0.5s;
+}
+
+li.color_changer a.gold {
+    width: 20px;
+    height: 35px;
+    background-color: #28364D;
+}
+
+li.color_changer a.navy {
+    width: 20px;
+    height: 35px;
+    background-color: #A49C87;
+}
+
+.nav > li > a.gold::before, .nav > li > a.navy::before{
+    border-top: none;
+}
+
+.nav > li > a.gold::after, .nav > li > a.navy::after{
+    border-bottom: none;
+}
+
+.navy_bg_change{
+background-color: #28364D;
+background: #28364D;    
+}
+
+.gold_bg_change{
+background-color: #A49C87;
+background: #A49C87;   
 }
