@@ -156,7 +156,6 @@ nav.navbar.navbar-default {
     background-color: #A49C87;
     padding: 10px;
     transition: height, 0.5s;
-    box-shadow: rgb(0 0 0 / 6%) 0px 2px 4px 0px inset;
 }
 
 .smaller-nav .navbar-brand > img {
