@@ -1034,32 +1034,89 @@ ul.social li.nums {
     transition: height, 0.5s;
 }
 
-li.color_changer a.gold {
+li.color_changer{
+padding: 30px 2px;
+}
+
+li.color_changer a {
     width: 20px;
-    height: 35px;
-    background-color: #28364D;
+    height: 20px;
 }
 
 li.color_changer a.navy {
-    width: 20px;
-    height: 35px;
+    background-color: #28364D;
+}
+
+li.color_changer a.gold {
     background-color: #A49C87;
 }
 
-.nav > li > a.gold::before, .nav > li > a.navy::before{
+li.color_changer a.grey {
+    background-color: #5d87a1;
+}
+li.color_changer a.burgundy {
+    background-color: #820024;
+}
+
+.nav > li.color_changer > a::before{
     border-top: none;
 }
 
-.nav > li > a.gold::after, .nav > li > a.navy::after{
+.nav > li.color_changer > a::after{
     border-bottom: none;
 }
 
-.navy_bg_change{
+.navy{
 background-color: #28364D;
 background: #28364D;    
 }
 
-.gold_bg_change{
+.gold{
 background-color: #A49C87;
 background: #A49C87;   
+}
+
+.grey{
+background-color: #5d87a1;
+background: #5d87a1;   
+}
+
+.burgundy{    
+background-color: #820024;
+background: #820024;  
+}
+
+.violet{    
+background-color: #3d2845;
+background: #3d2845;  
+}
+
+.terracotta{    
+background-color: #803f31;
+background: #803f31;  
+}
+
+.moss{
+background-color: #6d7040;
+background: #6d7040; 
+}
+
+.turquoise{
+background-color: #007d68;
+background: #007d68; 
+}
+
+.green{
+background-color: #4a721d;
+background: #4a721d; 
+}
+
+.yellow{
+background-color: #deb408;
+background: #deb408; 
+}
+
+.charcoal{
+background-color: #4d4d4d;
+background: #4d4d4d; 
 }

@@ -291,25 +291,38 @@ $('.image_box').mouseleave(function(){
 
 
 
-$('li.color_changer a.gold').click(function(){
+$('li.color_changer a').click(function(){
 
-    $('nav.navbar.navbar-default').addClass('navy_bg_change').removeClass('gold_bg_change');
-    $('.navbar-brand-img').addClass('navy_bg_change').removeClass('gold_bg_change');
-    $('.slider_container').addClass('navy_bg_change').removeClass('gold_bg_change');
+    var whatColor = $('nav.navbar.navbar-default').attr("class").split(" ").pop();
+    var linkTo = $(this).attr("class");
+
+    //$(window).scrollTop();  
+    $('.bg_change').addClass(linkTo).removeClass(whatColor);
+    /*
+    $('nav.navbar.navbar-default').addClass(linkTo).removeClass(whatColor);
+    $('.navbar-brand-img').addClass(linkTo).removeClass(whatColor);
+    $('.slider_container').addClass(linkTo).removeClass(whatColor);
+    $('footer').addClass(linkTo).removeClass(whatColor);
+    */
+
+    $('.changed_color').text(linkTo);
+    
+    if ($(this).hasClass("navy")) {
+    
     $('.navbar-brand-img').attr('src','img/tifco-logo-with-navy-bg.png');
 
+    }
 
-});
+    else {
 
-$('li.color_changer a.navy').click(function(){
-
-    $('nav.navbar.navbar-default').addClass('gold_bg_change').removeClass('navy_bg_change');
-    $('.navbar-brand-img').addClass('gold_bg_change').removeClass('navy_bg_change');
-    $('.slider_container').addClass('gold_bg_change').removeClass('navy_bg_change');
     $('.navbar-brand-img').attr('src','img/tifco-logo-for-gold-2.png');
 
+    }      
+
 
 });
+
+
 
 /*
 

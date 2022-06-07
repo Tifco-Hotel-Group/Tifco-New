@@ -1,8 +1,10 @@
 $(document).ready(function(){
+  /*
      $('#nav-trigger').waypoint(function() {
       $('.navbar').toggleClass('smaller-nav');
       $('.owl-container').toggleClass('smaller-nav');
-    },{offset: '50%'});
+    },{offset: '75%'});
+    */
  
   $('.animation-trigger').each(function() {
   $(this).waypoint(function() {
