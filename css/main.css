@@ -128,7 +128,7 @@ section.no-bottom-margin {
     height: 600px !important;
 }*/
 .subpage-banner .owl-stage-outer {
-    max-height: 600px;
+    max-height: 900px;
 }
 
 .no-padding {
@@ -904,7 +904,7 @@ footer a:hover {
 }
 
 .two .image_box {
-    width: 49%;
+    width: 49.6%;
 }
 
 .image_box img {
@@ -913,7 +913,7 @@ footer a:hover {
 }
 
 .image_box img.logo {
-    height: 300px;
+    height: 215px;
     width: auto;
     position: absolute;
     top: 50%;
@@ -924,6 +924,21 @@ footer a:hover {
 
 .hidden_values{
     display: none;
+}
+
+.header_partner.hotels {
+    margin: 50px 0;
+}
+
+.header_partner.hotels h2 {
+    font-size: 48px;
+    margin: 0 auto;
+    display: block;
+    width: 500px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #414141;
+    color: #414141;
 }
 
 
@@ -1041,6 +1056,7 @@ padding: 30px 2px;
 li.color_changer a {
     width: 20px;
     height: 20px;
+    user-select: none;
 }
 
 li.color_changer a.navy {
