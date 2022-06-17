@@ -121,7 +121,7 @@ section.no-bottom-margin {
 }
 .hp-banner .owl-carousel .owl-stage-outer,
 .subpage-banner .owl-carousel .owl-stage-outer {
-     border-bottom: #b3a88c 5px solid;
+    /* border-bottom: #b3a88c 5px solid;*/
 }
 /*.subpage-banner .owl-item {
     height: 600px !important;
@@ -252,6 +252,7 @@ nav.navbar.navbar-default {
     background-color: #fff;
     opacity: 1;
     margin-bottom: 160px;
+    border-top: 5px solid #A49C87;
 }
 
 .smaller-nav .navbar-brand {
