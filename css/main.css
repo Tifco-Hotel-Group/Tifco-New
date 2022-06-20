@@ -244,6 +244,10 @@ nav.navbar.navbar-default {
     justify-content: space-between;
 }
 
+div#nav-trigger {
+    margin-top: 130px;
+}
+
 .slider_container {
     position: absolute;
     bottom: 0;
@@ -251,7 +255,7 @@ nav.navbar.navbar-default {
     width: 100%;
     background-color: #fff;
     opacity: 1;
-    margin-bottom: 119px;
+    margin-bottom: 0px;
     border-top: 5px solid #A49C87;
 }
 
