@@ -113,7 +113,7 @@ section.no-bottom-margin {
     filter: brightness(1);
 }
 .hp-banner .owl-stage-outer {
-    max-height: 800px;
+    max-height: 860px;
 }
 .owl-container {
     transition: all 0.3s ease;
@@ -251,7 +251,7 @@ nav.navbar.navbar-default {
     width: 100%;
     background-color: #fff;
     opacity: 1;
-    margin-bottom: 160px;
+    margin-bottom: 119px;
     border-top: 5px solid #A49C87;
 }
 
