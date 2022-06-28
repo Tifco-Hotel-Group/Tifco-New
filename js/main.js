@@ -289,20 +289,28 @@ $('.image_box').mouseleave(function(){
 
 });
 
-
-
 $('li.color_changer a').click(function(){
 
+    // Setup
+        
+    // Add class="bg_change" as 2nd last class  
+    // Add class="color" as last class
+
+    //finds last class i.e color class
     var whatColor = $('nav.navbar.navbar-default').attr("class").split(" ").pop();
+
+    //finds color class of link
     var linkTo = $(this).attr("class");
 
+    // Prevents double click on Color Link
     if(whatColor != linkTo){
-    //$(window).scrollTop();  
+
     $('.bg_change').addClass(linkTo).removeClass(whatColor);
 
     $('.changed_color').text(linkTo);
     }
-    
+
+    //changes image on select background
     if ($(this).hasClass("navy")) {    
     $('.navbar-brand-img').attr('src','img/tifco-logo-with-navy-bg.png');
     }
@@ -315,6 +323,151 @@ $('li.color_changer a').click(function(){
 });
 
 
+
+$('.Simon, .Daniel').on('click', inittransferScript);
+
+// Split The Cost Functionality With LocalStorage
+
+
+var receipts = document.querySelector('#receipts');
+
+var savedList = localStorage.getItem('receiptListItems');
+// If there are any saved items, update our list
+
+function updateCount(){
+
+    if (localStorage.current_amount < 0 ){
+    document.querySelector(".result").innerHTML = "Simon Owes Dan " + Math.abs(localStorage.current_amount);
+    } 
+    else
+    { 
+    document.querySelector(".result").innerHTML = "Dan Owes Simon " + Math.abs(localStorage.current_amount); 
+    } 
+
+}
+
+updateCount();
+
+  
+
+
+if (savedList) {
+receipts.innerHTML = savedList;
+}
+    
+function inittransferScript(){
+
+var amountinput = document.querySelector('.amt').value;
+var descriptioninput = document.querySelector('.desc').value;
+var whereinput = document.querySelector('.where').value;
+var who = this.className.split(" ").pop();
+var today = new Date();
+var when = ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
+
+var receiptListItem = (who + " paid $" + amountinput + " on " + descriptioninput + " at " + whereinput + " - " + when);
+receipts.innerHTML += '<li>'  + receiptListItem + '</li>';
+// Save the list to localStorage
+localStorage.setItem('receiptListItems', receipts.innerHTML);
+// Check for saved wishlist items
+
+function ClearFields() {
+
+     document.querySelector(".desc").value = '';
+     document.querySelector(".where").value = '';
+     document.querySelector(".amt").value = '';
+}
+
+ClearFields();
+
+
+var amt = Number(amountinput);
+
+  if (typeof(Storage) !== "undefined") {
+
+    if (localStorage.current_amount ) {
+
+      if (who === "Daniel"){
+        localStorage.current_amount = Number(localStorage.current_amount) - amt;
+}
+
+else{
+    localStorage.current_amount = Number(localStorage.current_amount) + amt;
+    
+}
+      
+    } 
+
+    else {
+      localStorage.current_amount = 1;
+    }
+
+    updateCount();  
+
+  }
+
+  else {
+    document.querySelector(".result").innerHTML = "Change Browser, Bowser...";
+  }    
+
+};
+
+ /*
+
+    document.querySelector('.sub').onclick = function(){
+
+    var input = document.querySelector('.amt').value;
+
+    var amt = parseInt(input);
+
+    var text = document.querySelector('.result').innerText;
+
+    var totalBefore =  parseInt(text);
+
+    var sum = amt + totalBefore;
+
+    document.querySelector('.result').innerText = sum;
+
+
+
+    };
+
+/*
+
+
+$('.sub').click(function(){
+
+    var input = $('.amt').val();
+    var amt = parseInt(input);
+    var text = $('.result').text();
+    var totalBefore =  parseInt(text);
+
+    var sum = amt + totalBefore;
+    
+
+    
+
+    // Store It
+
+    var someVarName = "value";
+
+    localStorage.setItem("someVarKey", someVarName);
+
+    // Get It
+
+    var someVarName = localStorage.getItem("someVarKey");
+
+    
+
+    $('.result').text(sum);
+
+    var nextNumber = $('.result').text();
+
+    localStorage.setItem("updatedNumber", nextNumber);   
+ 
+
+});
+
+*/
 
 /*
 
@@ -384,5 +537,12 @@ setTimeout(function(){
   });
 
 });
+
+    
+
+  
+
+
+
 
 

@@ -121,7 +121,12 @@ section.no-bottom-margin {
 }
 .hp-banner .owl-carousel .owl-stage-outer,
 .subpage-banner .owl-carousel .owl-stage-outer {
-    /* border-bottom: #b3a88c 5px solid;*/
+    border-bottom: #b3a88c 5px solid;
+}
+
+body.home .hp-banner .owl-carousel .owl-stage-outer{
+    border-bottom: none;
+
 }
 /*.subpage-banner .owl-item {
     height: 600px !important;
@@ -160,6 +165,7 @@ nav.navbar.navbar-default {
     padding: 10px;
     transition: height, 0.5s;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border: 1px solid #A49C87;
 }
 
 .navbar-brand-img{
@@ -171,6 +177,7 @@ nav.navbar.navbar-default {
     transition: height, 0.5s;
     position: absolute;
     top: -10px;
+    border: none;
 }
 
 /*
@@ -440,6 +447,7 @@ ul.sub{
 .services-row {
     text-align: center;
     align-items: center;
+    display: none;
 }
 
 .service-box {
@@ -559,6 +567,7 @@ img.img-responsive.img-rounded {
     height: 300px;
     position: relative;
     background: #28364D;
+    display:none;
 }
 
 .brochure-box:after {
