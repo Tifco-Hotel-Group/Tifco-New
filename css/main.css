@@ -113,7 +113,7 @@ section.no-bottom-margin {
     filter: brightness(1);
 }
 .hp-banner .owl-stage-outer {
-    max-height: 860px;
+    max-height: 830px;
 }
 .owl-container {
     transition: all 0.3s ease;
@@ -164,8 +164,19 @@ nav.navbar.navbar-default {
     height: 105px;
     padding: 10px;
     transition: height, 0.5s;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    border: 1px solid #A49C87;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;    
+}
+
+.navbar-brand > img.one{
+    border: 5px solid #A49C87;
+}
+
+.navbar-brand > img.two{
+    box-shadow: rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px, rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px, rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+
+.navbar-brand > img.three{
+box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .navbar-brand-img{
@@ -178,6 +189,7 @@ nav.navbar.navbar-default {
     position: absolute;
     top: -10px;
     border: none;
+    box-shadow: none;
 }
 
 /*
@@ -251,17 +263,9 @@ nav.navbar.navbar-default {
     justify-content: space-between;
 }
 
-div#nav-trigger {
-    margin-top: 130px;
-}
 
 .slider_container {
-    position: absolute;
-    bottom: 0;
-    z-index: 99;
-    width: 100%;
     background-color: #fff;
-    opacity: 1;
     margin-bottom: 0px;
     border-top: 5px solid #A49C87;
 }
@@ -420,6 +424,7 @@ div#nav-trigger {
     position: relative;
     display: block;    
     padding: 18px 6px 18px 14px;
+    font-size: 16px;
 }
 
 
@@ -567,7 +572,6 @@ img.img-responsive.img-rounded {
     height: 300px;
     position: relative;
     background: #28364D;
-    display:none;
 }
 
 .brochure-box:after {
@@ -1173,4 +1177,41 @@ background: #4d4d4d;
     opacity: 0.9;
     transition: height, 0.5s;
     display: none;
+}
+
+h4.accordion_head {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    background-color: #28364D;
+    color: #fff;
+    margin-bottom: 0px;
+    cursor: pointer;
+}
+
+.accordion_body {
+    border: 1px solid #28364D;
+    display: none;
+    cursor: pointer;
+
+}
+
+.accordion_body p {
+    padding: 12px 20px;
+    margin: 0;
+}
+
+.innerbody {
+    border-top: 1px solid #c3c3c3;
+    padding: 12px 0;
+    display: none;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bold;
+    font-size: 1.2em;
 }

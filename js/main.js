@@ -289,6 +289,29 @@ $('.image_box').mouseleave(function(){
 
 });
 
+/*
+
+$('.navbar-brand-img').on('click', image_css_switch);
+
+function image_css_switch(){
+
+    var classes = ["one", "two", "three"];
+
+    let arrayLength = classes.length;
+    let i = 0 ; 
+    i < arrayLength; 
+    i++ ;
+
+    var val = classes[i];
+
+    alert(val);
+    
+
+}
+
+*/
+
+
 $('li.color_changer a').click(function(){
 
     // Setup
