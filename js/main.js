@@ -230,13 +230,15 @@ $('.image_box').click(function(){
     // Read Text Values
     var dataheading = $(this).find("h2").text();
     var dataImg = $(this).find(".hidden_values img").attr('src');
-    var dataP = $(this).find(".p_text_block").text();
+    var dataP = $(this).find(".hidden_values .p_text_block").text();
+    var dataLInk = $(this).find(".hidden_values a").attr('href');
 
 
     // Write New Text Values
     $('.hotel_row img').attr("src", dataImg);
-    $('.hotel_row .p_text_block').text(dataP);
+    $('.hotel_row .first_p').text(dataP);
     $('.hotel_row h2').text(dataheading); 
+    $('.hotel_row button a').attr("href", dataLInk);
     
 
 setTimeout(function(){ 
@@ -347,92 +349,6 @@ $('li.color_changer a').click(function(){
 
 
 
-$('.Simon, .Daniel').on('click', inittransferScript);
-
-// Split The Cost Functionality With LocalStorage
-
-
-var receipts = document.querySelector('#receipts');
-
-var savedList = localStorage.getItem('receiptListItems');
-// If there are any saved items, update our list
-
-function updateCount(){
-
-    if (localStorage.current_amount < 0 ){
-    document.querySelector(".result").innerHTML = "Simon Owes Dan " + Math.abs(localStorage.current_amount);
-    } 
-    else
-    { 
-    document.querySelector(".result").innerHTML = "Dan Owes Simon " + Math.abs(localStorage.current_amount); 
-    } 
-
-}
-
-updateCount();
-
-  
-
-
-if (savedList) {
-receipts.innerHTML = savedList;
-}
-    
-function inittransferScript(){
-
-var amountinput = document.querySelector('.amt').value;
-var descriptioninput = document.querySelector('.desc').value;
-var whereinput = document.querySelector('.where').value;
-var who = this.className.split(" ").pop();
-var today = new Date();
-var when = ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
-
-var receiptListItem = (who + " paid $" + amountinput + " on " + descriptioninput + " at " + whereinput + " - " + when);
-receipts.innerHTML += '<li>'  + receiptListItem + '</li>';
-// Save the list to localStorage
-localStorage.setItem('receiptListItems', receipts.innerHTML);
-// Check for saved wishlist items
-
-function ClearFields() {
-
-     document.querySelector(".desc").value = '';
-     document.querySelector(".where").value = '';
-     document.querySelector(".amt").value = '';
-}
-
-ClearFields();
-
-
-var amt = Number(amountinput);
-
-  if (typeof(Storage) !== "undefined") {
-
-    if (localStorage.current_amount ) {
-
-      if (who === "Daniel"){
-        localStorage.current_amount = Number(localStorage.current_amount) - amt;
-}
-
-else{
-    localStorage.current_amount = Number(localStorage.current_amount) + amt;
-    
-}
-      
-    } 
-
-    else {
-      localStorage.current_amount = 1;
-    }
-
-    updateCount();  
-
-  }
-
-  else {
-    document.querySelector(".result").innerHTML = "Change Browser, Bowser...";
-  }    
-
-};
 
  /*
 
