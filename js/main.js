@@ -229,13 +229,13 @@ $('.image_box').click(function(){
 
     // Read Text Values
     var dataheading = $(this).find("h2").text();
-    var dataImg = $(this).find(".hidden_values img.wide_shot").attr('src');
+    var dataImg = $(this).find(".hidden_values img").attr('src');
     var dataP = $(this).find(".hidden_values .p_text_block").text();
     var dataLInk = $(this).find(".hidden_values a").attr('href');
 
 
     // Write New Text Values
-    $('.hotel_row img').attr("src", dataImg);
+    $('.hotel_row img.wide_shot').attr("src", dataImg);
     $('.hotel_row .first_p').text(dataP);
     $('.hotel_row h2').text(dataheading); 
     $('.hotel_row button a').attr("href", dataLInk);
