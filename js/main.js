@@ -229,7 +229,7 @@ $('.image_box').click(function(){
 
     // Read Text Values
     var dataheading = $(this).find("h2").text();
-    var dataImg = $(this).find(".hidden_values img").attr('src');
+    var dataImg = $(this).find(".hidden_values img.wide_shot").attr('src');
     var dataP = $(this).find(".hidden_values .p_text_block").text();
     var dataLInk = $(this).find(".hidden_values a").attr('href');
 
@@ -239,6 +239,19 @@ $('.image_box').click(function(){
     $('.hotel_row .first_p').text(dataP);
     $('.hotel_row h2').text(dataheading); 
     $('.hotel_row button a').attr("href", dataLInk);
+
+    $("ul.social").show();
+    $(".tifco_icon").parent().show();
+    if ($(this).hasClass("no_food")){$(".food").parent().hide();}
+    if ($(this).hasClass("no_gym")){$(".gym").parent().hide();}
+    if ($(this).hasClass("no_kids")){$(".kids").parent().hide();}
+    if ($(this).hasClass("no_meeting")){$(".meeting").parent().hide();}
+    if ($(this).hasClass("no_swimming")){$(".swimming").parent().hide();}
+    if ($(this).hasClass("no_playground")){$(".playground").parent().hide();}
+    if ($(this).hasClass("no_terrace")){$(".terrace").parent().hide();}
+    if ($(this).hasClass("no_conference")){$(".conference").parent().hide();}
+    if ($(this).hasClass("no_icons")){$("ul.social").hide();}
+    
     
 
 setTimeout(function(){ 
