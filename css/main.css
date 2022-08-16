@@ -833,6 +833,13 @@ footer a:hover {
     margin: 0 auto;
 }
 
+.alternative.hotel_row img.tifco_icon {
+    width: 45px;
+    display: inline;
+    margin: 0;
+    margin-right: 22px;
+}
+
 .hotel_row p {
     width: 66%;
     margin: 2%;
@@ -1042,6 +1049,8 @@ ul.social {
     width: 100%;
     padding: 15px 10px;
     border-top: 2px solid #28364D;
+    display: flex;
+    align-content: space-between;
 }
 
 ul.social li {
@@ -1199,4 +1208,116 @@ h4.accordion_head {
 .bolder{
     font-weight: bold;
     font-size: 1.2em;
+}
+
+/* Accordiojn */
+
+article.header_careers {
+    margin-bottom: 50px;
+}
+
+.accordion {
+  font-size: 2rem;
+  max-width: 960px;
+  border-radius: 5px;
+
+}
+
+.accordion-header,
+.accordion-body {
+  background: white;
+}
+
+.accordion-header {
+    padding: 1.5em 1.5em;
+    background: #28364D;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9em;
+    letter-spacing: .1em;
+    transition: all .5s;
+    font-family: 'Raleway', sans-serif;
+    text-align: right;
+}
+
+.accordion__item {
+    border-bottom: 1px solid #fff;
+}
+
+.accordion__item .accordion__item {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.accordion-header:hover {
+  position: relative;
+  z-index: 5;
+}
+
+.accordion-body {
+  background: #fcfcfc;
+  color: #353535;
+  display: none;
+}
+
+.accordion-body__contents {
+  padding: 1.5em 1.5em;
+  font-size: .85em;
+}
+
+.accordion__item.active:last-child .accordion-header {
+  border-radius: none;
+}
+
+.accordion:first-child > .accordion__item > .accordion-header {
+  border-bottom: 1px solid transparent;
+}
+
+.accordion__item.active > .accordion-header:after {
+  transform: rotate(-180deg);
+}
+
+.accordion__item .accordion__item .accordion-header {
+    background: #5d87a1;
+    color: #fff;
+}
+
+a.job_link {
+    display: block;
+    margin-top: 20px;
+    color: #A49C87;
+    text-decoration: none;
+}
+
+.available_jobs {
+    position: absolute;
+    top: 10px;
+    right: -350px;
+    background-color: #5d87a1;
+    padding: 50px;
+    color: #fff;
+    width: 265px;
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #5d87a1;
+    border-radius: 160px;
+}
+
+.available_jobs .number{
+    font-size: 48px;
+    display: block;
+    font-weight: 900;
+}
+
+.accordion-body__contents.hotel_listings {
+    font-size: 1em;
+}
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 1em;
+  }
+  
+  .accordion {
+    width: 100%;
+  }
 }
