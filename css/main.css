@@ -834,7 +834,7 @@ footer a:hover {
 }
 
 .alternative.hotel_row img.tifco_icon {
-    width: 45px;
+    width: 38px;
     display: inline;
     margin: 0;
     margin-right: 22px;
@@ -1320,4 +1320,51 @@ a.job_link {
   .accordion {
     width: 100%;
   }
+}
+
+/* Board */
+
+p.profileBoard img {
+    float: left;
+    margin-right: 20px;
+    width: 130px;
+    margin-bottom: 50px;
+    clear: both;
+}
+
+p.profileBoard span {
+    font-weight: bolder;
+    display: block;
+}
+
+p.profileBoardDesc {
+    padding-bottom: 35px;
+}
+
+p.profileBoardDesc.Management {
+    border-bottom: 0px;
+}
+
+h2, .h2 {
+    padding-bottom: 25px;
+}
+
+/* Sustainability */
+
+button.btn.btn-primary.sustainability {
+    margin-top: 20px;
+    background-color: #2e4161;
+    background-position: 0 -15px;
+    font-size: 22px;
+}
+
+/* Grow */
+
+p.profileBoard.Grow {
+    margin-top: 50px;
+}
+
+p.profileBoard.Grow img {
+    margin-bottom: 10px;
+    width: 200px;
 }
