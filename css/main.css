@@ -1412,9 +1412,13 @@ p.profileBoard.Grow img {
     width: 250px;
 }
 
-.careers .container {
+.careers .container, .contact .container {
     width: 100%;
     font-size: 16px;
+}
+
+.container.slim {
+    width: 1350px;
 }
 
 .careers section.content {
@@ -1422,7 +1426,7 @@ p.profileBoard.Grow img {
     margin: 0 auto;
 }
 
-.careers .owl-container {
+.careers .owl-container, .contact .owl-container {
     display: none;
 }
 
