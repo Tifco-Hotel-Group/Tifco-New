@@ -9,6 +9,7 @@
 body {
     color: #28364D;
     font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
 h1,
@@ -1494,12 +1495,12 @@ p.header_text {
     float: left;
     position: relative;
     left: 80px;
-    width: 180px;
+    width: 240px;
 }
 
 .profile_grow .content {
-    width: 78%;
-    margin-left: 18%;
+    width: 75%;
+    margin-left: 22%;
 }
 
 .profile_grow {
