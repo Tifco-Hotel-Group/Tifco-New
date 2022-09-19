@@ -490,6 +490,18 @@ setTimeout(function(){
 
 });
 
+
+$('.title_Profile').click(function(){
+
+
+  $('.profile_grow').removeClass("selected");
+
+  var parent = $(this).parent().find(".profile_grow");
+
+  parent.addClass("selected");
+
+});
+
     
 
   

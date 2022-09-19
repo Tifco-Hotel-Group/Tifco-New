@@ -1520,7 +1520,7 @@ p.header_text {
 
 .strong{font-weight: bolder;}
 
-.title, .title.selected:hover {
+.title_Profile, .title_Profile.selected:hover {
     width: 100%;
     text-align: center;
     padding: 20px 0;
@@ -1529,6 +1529,11 @@ p.header_text {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     cursor:pointer;
+}
+
+
+.title_Profile:hover {
+    color:#212121;
 }
 
 .map{
@@ -1587,4 +1592,29 @@ input#ctl00_cphContent_ctl04_ctl00_btnSubmit {
 input#ctl00_cphContent_ctl04_ctl00_btnSubmit:hover{
     background-color: #a49c87;
 
+}
+
+
+.row.curve {
+    position: relative;
+    bottom: 105px;
+}
+
+.row.curve-b {
+    position: relative;
+    bottom: 558px;
+    transform: rotate(180deg);
+}
+.row.curve img, .row.curve-b img {
+    width:100%;
+}
+
+
+section.rows.rows_videos, 
+.row.row_of_three_header.videos_profile,
+.rows_videos .row_of_three,
+.rows_videos .row_three:nth-child(1),
+.rows_videos .row_three:nth-child(2),
+.rows_videos .row_three:nth-child(3) {
+    background: #fff;
 }
