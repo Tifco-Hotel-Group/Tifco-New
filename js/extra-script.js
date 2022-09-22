@@ -154,3 +154,8 @@ parent.find(".hotel_listings").text(announcementThis);
 
 var alljobs = $('.Opportunity_item').length;
 
+$('.title_Profile').click(function(){
+
+  alert("fasdf");
+
+});
