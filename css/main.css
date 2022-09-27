@@ -1619,6 +1619,116 @@ section.rows.rows_videos,
     background: #fff;
 }
 
+@media (max-width: 1600px){
+
+    .profile_grow img {
+    width: 280px;
+    display: block;
+    left: 0;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.row.row_of_three h2 {
+    text-align: center;
+}
+
+.profile_grow .content {
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+.profile_grow.selected {
+    height: auto;
+}
+
+.image_box img.logo {
+    height: 60%;
+}
+
+}
+
+
+
+@media (max-width: 1400px){
+
+    section.careers_banner img {
+    width: 100%;
+}
+
+p.header_text {
+    font-size: 36px;
+    }
+
+    }
+
+
+@media (max-width: 1025px){
+
+    .overlay {
+    width: 95%;
+    height: 75%;
+    margin: 0 auto;
+    bottom:2%;
+}
+
+.navbar-default .navbar-nav > li > a {
+    margin-top: 35px;
+}
+
+.navbar-nav {
+    margin-top: 35px;
+    width: 100%;
+    display: block;
+}
+
+.navbar-brand > img {
+    padding-left: 0;
+    position: relative !important;
+    left: -18px;
+}
+
+.image_boxes.four img.logo {
+    height: 60%;
+}
+
+}
+
+@media (max-width: 860px){
+
+    .navbar-nav > li {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+    .header_partner.hotels h2{
+        width: 100%;
+        font-size: 34px;
+    }
+
+    label:nth-child(1) {
+    width: auto;
+}
+
+label {
+    padding: 2% 5%;
+    width: 90%;
+}
+
+input, textarea {
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+}
+
 @media (max-width: 600px){
 
 .image_boxes {
@@ -1637,11 +1747,7 @@ button.readmore.btn.btn-second.center-block {
 }
 
 .overlay {
-    width: 95%;
-    height: 85%;
-    margin: 0 auto;
-    bottom:2%;
-}
+    height: 85%;}
 
 .hotel_row p.first_p {
     height: 250px;
@@ -1688,113 +1794,6 @@ footer ul.nav.navbar-nav li {
 
 .profile_grow img {
     width: 60%;
-}
-
-/* Contact */
-
-
-
-
-
-}
-
-
-@media (max-width: 1600px){
-
-    .profile_grow img {
-    width: 280px;
-    display: block;
-    left: 0;
-    float: none;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.row.row_of_three h2 {
-    text-align: center;
-}
-
-.profile_grow .content {
-    display: block;
-    float: none;
-    margin: 0 auto;
-}
-
-.profile_grow.selected {
-    height: auto;
-}
-
-}
-
-
-@media (max-width: 1600px){
-
-.image_box img.logo {
-    height: 60%;
-}
-
-}
-
-@media (max-width: 860px){
-    .header_partner.hotels h2{
-        width: 100%;
-        font-size: 34px;
-    }
-
-    label:nth-child(1) {
-    width: auto;
-}
-
-label {
-    padding: 2% 5%;
-    width: 90%;
-}
-
-input, textarea {
-    width: 90%;
-    margin: 0 5%;
-}
-
-
-.navbar-default .navbar-collapse, .navbar-default .navbar-form {
-    border: none;
-}
-
-}
-
-@media (max-width: 1400px){
-
-    section.careers_banner img {
-    width: 100%;
-}
-
-p.header_text {
-    font-size: 36px;
-    }
-
-    }
-
-
-@media (max-width: 1025px){
-
-.navbar-default .navbar-nav > li > a {
-    margin-top: 35px;
-}
-
-.navbar-nav {
-    margin-top: 35px;
-    width: 100%;
-    display: block;
-}
-
-.navbar-brand > img {
-    padding-left: 0;
-    position: relative !important;
-    left: -18px;
-}
-
-.image_boxes.four img.logo {
-    height: 60%;
 }
 
 }
