@@ -1376,7 +1376,7 @@ p.profileBoard.Grow img {
     justify-content: space-between;
     background-color: #d7e4e3;
     padding: 20px 0 50px 0;
-    width: 1350px;
+    max-width: 1350px;
     margin: 0 auto;
 }
 
@@ -1441,12 +1441,6 @@ section.rows{
     background-color: #d7e4e3;
 }
 
-.row.row_of_three_header {
-    width: 100%;
-    text-align: center;
-    background: #d7e4e3;
-}
-
 .row_three p {
     font-weight: bold;
     text-align: center;
@@ -1457,7 +1451,6 @@ section.rows{
 .row.row_of_three_header {
     width: 100%;
     text-align: center;
-    background: #d7e4e3;
     padding-top: 50px;
 }
 
@@ -1557,7 +1550,7 @@ p.header_text {
 }
 
 fieldset {
-    width: 570px;
+    max-width: 570px;
     display: block;
     margin: 0 auto;
 }
@@ -1624,4 +1617,188 @@ section.rows.rows_videos,
 .rows_videos .row_three:nth-child(2),
 .rows_videos .row_three:nth-child(3) {
     background: #fff;
+}
+
+@media (max-width: 600px){
+
+.image_boxes {
+    width: 100%;
+    display: inline;
+}
+
+.image_box, .four .image_box {
+    width: 96%;
+    margin: 0 2%;
+    margin-bottom: 40px;
+}
+
+button.readmore.btn.btn-second.center-block {
+    bottom:0px !important;
+}
+
+.overlay {
+    width: 95%;
+    height: 85%;
+    margin: 0 auto;
+    bottom:2%;
+}
+
+.hotel_row p.first_p {
+    height: 250px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.alternative.hotel_row img.tifco_icon {
+    width: 30px;
+    margin-right: 5px;
+}
+
+.navbar-form {
+    display: none;
+}
+
+.col-md-6.footer-animation-trigger.animated.fadeInUp {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+
+footer ul.nav.navbar-nav li {
+    padding: 6px 0px;
+}
+
+.hotel_row h2 {
+    font-size: 20px;
+}
+
+/* Careers */
+
+.row.row_of_three_header {
+    padding-top: 20px;
+}
+
+.row_of_three {
+    width: 100%;
+    display: block;
+}
+
+.row_three {
+    width: 100%;
+}
+
+.profile_grow img {
+    width: 60%;
+}
+
+/* Contact */
+
+
+
+
+
+}
+
+
+@media (max-width: 1600px){
+
+    .profile_grow img {
+    width: 280px;
+    display: block;
+    left: 0;
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.row.row_of_three h2 {
+    text-align: center;
+}
+
+.profile_grow .content {
+    display: block;
+    float: none;
+    margin: 0 auto;
+}
+
+.profile_grow.selected {
+    height: auto;
+}
+
+}
+
+
+@media (max-width: 1600px){
+
+.image_box img.logo {
+    height: 60%;
+}
+
+}
+
+@media (max-width: 860px){
+    .header_partner.hotels h2{
+        width: 100%;
+        font-size: 34px;
+    }
+
+    label:nth-child(1) {
+    width: auto;
+}
+
+label {
+    padding: 2% 5%;
+    width: 90%;
+}
+
+input, textarea {
+    width: 90%;
+    margin: 0 5%;
+}
+
+
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border: none;
+}
+
+}
+
+@media (max-width: 1400px){
+
+    section.careers_banner img {
+    width: 100%;
+}
+
+p.header_text {
+    font-size: 36px;
+    }
+
+    }
+
+
+@media (max-width: 1025px){
+
+.navbar-default .navbar-nav > li > a {
+    margin-top: 35px;
+}
+
+.navbar-nav {
+    margin-top: 35px;
+    width: 100%;
+    display: block;
+}
+
+.navbar-brand > img {
+    padding-left: 0;
+    position: relative !important;
+    left: -18px;
+}
+
+.image_boxes.four img.logo {
+    height: 60%;
+}
+
+}
+
+ul.indent-slight {
+    margin-left: 12px;
 }
