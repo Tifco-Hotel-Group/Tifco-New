@@ -33,6 +33,23 @@ $('.accordion_body').click(function(){
 
 });
 
+$('.main_nav a').click(function(){
+
+  event.preventDefault();
+  
+  var heading = $(this).text();
+  $('h2.big_header_about').text(heading);
+
+  $('.changing_subpages p, .changing_subpages ul').hide();
+
+  var link_change = $(this).attr('href').split('.')[0];
+
+  //alert(link_change);
+
+$('.changing_subpages .' + link_change).show();
+
+  });
+
 
 $('.accordion_head').click(function(){
 

@@ -502,7 +502,25 @@ $('.title_Profile').click(function(){
 
 });
 
-    
+
+$('.jobs_button a').click(function(){
+
+event.preventDefault();
+$('.careers_overlay').css("height","70%");
+$(".black_box").css("height","100%");
+
+
+});
+
+$('.careers_close_overlay').click(function(){
+
+
+$('.careers_overlay').css("height","0");
+$(".black_box").css("height","0");
+
+});
+
+
 
   
 
