@@ -506,7 +506,7 @@ $('.title_Profile').click(function(){
 $('.jobs_button a').click(function(){
 
 event.preventDefault();
-$('.careers_overlay').css("height","70%");
+$('.careers_overlay').css("height","80%");
 $(".black_box").css("height","100%");
 
 
