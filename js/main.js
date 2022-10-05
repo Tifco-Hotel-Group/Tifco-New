@@ -493,12 +493,29 @@ setTimeout(function(){
 
 $('.title_Profile').click(function(){
 
-
-  $('.profile_grow').removeClass("selected");
-
   var parent = $(this).parent().find(".profile_grow");
 
+
+  
+
+  
+
+  if (parent.hasClass('selected')){
+
+  parent.removeClass("selected");
+  $('.fa-angle-down').css("transform","none");
+
+  }
+  else{
+
+  $('.profile_grow').removeClass("selected");
   parent.addClass("selected");
+
+  $('.fa-angle-down').css("transform","none");
+  $(this).find('.fa-angle-down').css("transform","rotate(180deg)");
+
+  }
+  
 
 });
 
@@ -512,14 +529,52 @@ $(".black_box").css("height","100%");
 
 });
 
+$('.careers_overlay').click(function(){
+
+closeitDown();
+
+});
+
 $('.careers_close_overlay').click(function(){
 
+closeitDown();
+
+});
+
+function closeitDown(){
 
 $('.careers_overlay').css("height","0");
 $(".black_box").css("height","0");
 
-});
+}
 
+
+$('.readmore_click').click(function(){
+
+var contentToSlide = $(this).parent().find('.overflow_profile');
+
+if ($(this).hasClass('open')){
+
+    $(this).removeClass('open');
+
+    contentToSlide.slideUp();
+
+    $(this).text("Read More ...")
+
+
+}
+
+else{
+
+    $(this).addClass('open');
+
+    contentToSlide.slideDown();
+
+    $(this).text("Read Less ...")
+
+}
+
+});
 
 
   

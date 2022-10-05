@@ -1514,8 +1514,9 @@ p.header_text {
 }
 
 .profile_grow.selected {
-    height:483px;
     display: block;
+    min-height: 335px;
+    height: auto;
 }
 
 .strong{font-weight: bolder;}
@@ -1529,11 +1530,32 @@ p.header_text {
     border-bottom: 1px solid #fff;
     border-top: 1px solid #fff;
     cursor:pointer;
+    position: relative;
+}
+
+i.fas.fa-solid.fa-angle-down.fa-2x {
+    position: absolute;
+    right: 60px;
+    font-size: 1.5em;
+    transition: transform, 0.5s;
+}
+
+.first.fa-angle-down{
+    transform: rotate(180deg);
 }
 
 
 .title_Profile:hover {
     color:#212121;
+}
+
+.overflow_profile{
+    display: none;
+}
+
+.readmore_click{
+    font-style: italic;
+    cursor: pointer;
 }
 
 .map{
@@ -1771,6 +1793,50 @@ p.header_text {
     height: 60%;
 }
 
+.smaller-nav {
+    background: #28364D;
+}
+
+div#owl-banner {
+    margin-top: 170px;
+}
+
+nav.navbar.navbar-default {
+    min-height: 105px;
+    opacity: 1;
+}
+
+.navbar-brand > img {
+    height: 100px;
+    transition: height, 0.5s;
+    position: absolute;
+    top: -10px;
+    border: none;
+    box-shadow: none;
+}
+
+.navbar-brand > img.two{
+    box-shadow: none;
+}
+
+}
+
+@media (max-width: 1000px){
+
+.careers_overlay {
+    overflow: auto;
+}
+
+.logo_row {
+    display: block;
+    margin: 0 auto;
+    width: 360px;
+}
+
+.logos_careers img {
+    margin-bottom: 12px;
+}
+
 }
 
 @media (max-width: 860px){
@@ -1804,6 +1870,18 @@ input, textarea {
     border: none;
 }
 
+div#owl-banner {
+    margin-top: 150px;
+}
+
+}
+
+@media (max-width: 768px){
+
+div#owl-banner {
+    margin-top: 89px;
+}
+
 }
 
 @media (max-width: 600px){
@@ -1828,7 +1906,7 @@ button.readmore.btn.btn-second.center-block {
 
 .hotel_row p.first_p {
     height: 250px;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
 }
 
