@@ -1422,6 +1422,10 @@ p.profileBoard.Grow img {
     margin: 0 auto;
 }
 
+.careers article {
+    padding: 0px 20px;
+}
+
 section.take_up {
     margin-bottom: -105px;
 }
@@ -1816,16 +1820,16 @@ nav.navbar.navbar-default {
     box-shadow: none;
 }
 
+.nav > li > a::before {
+    border-top: none;
+}
+
 }
 
 @media (max-width: 1000px){
 
 .careers_overlay {
     overflow: auto;
-}
-
-.careers article {
-    padding: 0px 20px;
 }
 
 .logo_row {
