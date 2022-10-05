@@ -1477,6 +1477,7 @@ section.rows.two, section.rows.two .row_of_three, section.rows.two .row.row_of_t
 section.careers_banner img {
     width: 65%;
     float: left;
+    margin-top: 90px;
 }
 
 section.careers_banner, section.careers_banner .row {
@@ -1517,7 +1518,8 @@ p.header_text {
 .profile_grow.selected {
     display: block;
     min-height: 335px;
-    height: auto;
+    height: auto;    
+    transition: height, 0.5s;
 }
 
 .strong{font-weight: bolder;}
@@ -1557,6 +1559,7 @@ i.fas.fa-solid.fa-angle-down.fa-2x {
 .readmore_click{
     font-style: italic;
     cursor: pointer;
+    color: #A49C87;
 }
 
 .map{
@@ -1805,6 +1808,7 @@ div#owl-banner {
 nav.navbar.navbar-default {
     min-height: 105px;
     opacity: 1;
+    padding-bottom: 20px;
 }
 
 .navbar-brand > img {
@@ -1822,6 +1826,15 @@ nav.navbar.navbar-default {
 
 .nav > li > a::before {
     border-top: none;
+}
+
+.rows_videos .row_of_three {
+    width: 100%;
+    display: block;
+}
+
+.rows_videos .row_three {
+    width: 100%;
 }
 
 }
