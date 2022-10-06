@@ -1979,6 +1979,34 @@ footer ul.nav.navbar-nav li {
 
 }
 
+@media (max-width: 360px){
+
+button.jobs_button {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hotel_row h2 {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.smaller-nav .navbar-brand > img {
+    height: 90px;
+    top: -20px;
+    left: -33px;
+}
+
+}
+
+@media (max-width: 280px){
+
+.overlay {
+    height: 60%;
+}
+
+}
+
 @media (max-height: 760px){
 
 .buttons {
@@ -1987,6 +2015,30 @@ footer ul.nav.navbar-nav li {
 
 .hotel_row p.first_p {
     max-height: 220px;
+}
+
+}
+
+@media (max-height: 630px){
+
+.hotel_row p.first_p {
+    max-height: 150px;
+}
+
+.overlay {
+    height: 80%;
+}
+
+}
+
+@media (max-height: 555px){
+
+.hotel_row p {
+    font-size: 0.9em;
+}
+
+.hotel_row p.first_p {
+    max-height: 140px;
 }
 
 }
