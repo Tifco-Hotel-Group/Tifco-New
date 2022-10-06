@@ -1722,6 +1722,15 @@ button.jobs_button a {
     background-color: #d7e4e3;
 }
 
+@media (max-width: 1900px){
+
+img.exterior {
+    /* width: 300px; */
+    height: 100%;
+}
+
+}
+
 @media (max-width: 1600px){
 
     .profile_grow img {
@@ -1904,9 +1913,20 @@ div#owl-banner {
     margin-top: 89px;
 }
 
+.subpage-nav ul > li > a {
+    text-align: center;
+    border-bottom: 1px solid #28364d;
+    /*
+    background-color: #28364d;
+    color: #fff;
+    */
+}
+
 }
 
 @media (max-width: 600px){
+
+
 
 .image_boxes {
     width: 100%;
@@ -2043,3 +2063,41 @@ button.jobs_button {
 
 }
 
+/* Hamburger Fix Overide Bootstrap */
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-toggle, #submenu-button{
+    background-color: transparent;
+}
+
+i.fas.hamburger_hit.fa-bars.fa-3x {
+    font-size: 2.7em;
+}
+
+.subpage-nav-block h3 {
+    font-size: 20px;
+    position: relative;
+}
+
+i.fas.fa-angle-down.fa-2x {
+    font-size: 2em;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: 45px;
+}
+
+/* Contact Jot Firm */
+
+.form-all {
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Verdana, Tahoma, sans-serif;
+    background-color: transparent;
+    margin: 0 auto;
+}

@@ -239,6 +239,7 @@ $('.image_box').click(function(){
     $('.hotel_row .first_p').text(dataP);
     $('.hotel_row h2').text(dataheading); 
     $('.hotel_row button a').attr("href", dataLInk);
+    $('.hotel_row a').attr("href", dataLInk);
 
     $("ul.social").show();
     $(".tifco_icon").parent().show();
@@ -575,7 +576,6 @@ else{
 }
 
 });
-
 
   
 
