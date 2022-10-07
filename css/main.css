@@ -2086,7 +2086,7 @@ i.fas.hamburger_hit.fa-bars.fa-3x {
     position: relative;
 }
 
-i.fas.fa-angle-down.fa-2x {
+.subpage-nav-block i.fas.fa-angle-down.fa-2x {
     font-size: 2em;
     position: absolute;
     left: 50%;
