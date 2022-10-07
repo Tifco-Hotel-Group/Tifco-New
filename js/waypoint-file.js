@@ -31,12 +31,12 @@ $(document).ready(function(){
     var countupoptions = {useEasing : true, useGrouping : true, separator : ',', decimal : '.', prefix : '', suffix : '' };
      $('.rooms-circle').waypoint(function() {
       $(this.element).toggleClass('grow-circle');         
-         var hotel_count = new CountUp("rooms-number", 0, 2583, 0, 1.5, countupoptions);
+         var hotel_count = new CountUp("rooms-number", 0, 2959, 0, 1.5, countupoptions);
          hotel_count.start();
      },{offset: '90%'});
     $('.hotels-circle').waypoint(function() {
       $(this.element).toggleClass('grow-circle');
-         var rooms_count = new CountUp("hotels-number", 0, 26, 0, 1.5, countupoptions);
+         var rooms_count = new CountUp("hotels-number", 0, 25, 0, 1.5, countupoptions);
          rooms_count.start();
      },{offset: '90%'});
     $('.conference-circle').waypoint(function() {
