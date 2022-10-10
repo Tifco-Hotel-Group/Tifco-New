@@ -41,7 +41,7 @@ $(document).ready(function(){
      },{offset: '90%'});
     $('.conference-circle').waypoint(function() {
       $(this.element).toggleClass('grow-circle');
-         var conference_count = new CountUp("conference-number", 0, 4650, 0, 1.5, countupoptions);
+         var conference_count = new CountUp("conference-number", 0, 3450, 0, 1.5, countupoptions);
          conference_count.start();
      },{offset: '90%'});
  
