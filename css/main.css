@@ -1760,6 +1760,10 @@ img.exterior {
     height: 60%;
 }
 
+img.blankImage {
+    display: none;
+}
+
 }
 
 
@@ -1926,7 +1930,9 @@ div#owl-banner {
 
 @media (max-width: 600px){
 
-
+img.blankImage {
+    display: none;
+}
 
 .image_boxes {
     width: 100%;
