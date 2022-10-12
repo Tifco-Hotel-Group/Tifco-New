@@ -1782,6 +1782,21 @@ p.header_text {
     width: 100%; 
 }
 
+.row_three img {
+    width: 100px;
+    margin: 5px auto 10px auto;
+}
+
+.row_three {
+    min-height: auto;
+    margin-bottom: 30px;
+}
+
+.row.row_of_three_header h2 {
+    font-size: 28px;
+    padding-bottom: 10px;
+}
+
     }
 
 
