@@ -48,6 +48,10 @@ $('.main_nav a').click(function(){
 
 $('.changing_subpages .' + link_change).show();
 
+$([document.documentElement, document.body]).animate({
+        scrollTop: $("#nav-trigger").offset().top - 90
+    }, 500);
+
   });
 
 
