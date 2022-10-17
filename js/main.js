@@ -555,30 +555,6 @@ var isKeyPressed = {
     'b': false, // ASCII code for 'b'
  // ... Other keys to check for custom key combinations
 };
- 
-document.onkeydown = (keyDownEvent) => {
-  
- //Prevent default key actions, if desired
- keyDownEvent.preventDefault();
-  
-// Track down key click
- isKeyPressed[keyDownEvent.key] = true;
-  
-// Check described custom shortcut
-if (isKeyPressed["a"] && isKeyPressed["b"])  //for example we want to check if a and b are clicked at the same time
- //do something as custom shortcut (a & b) is clicked
-
-alert("fer");
-};
-  
-document.onkeyup = (keyUpEvent) => {
-  
- // Prevent default key actions, if desiredab
- keyUpEvent.preventDefault();
-  
- // Track down key release
- isKeyPressed[keyDownEvent.key] = false;
-};
 
 
 $('.readmore_click').click(function(){
