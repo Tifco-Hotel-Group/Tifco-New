@@ -113,7 +113,7 @@ function initMap() {
             "featureType": "road",
             "elementType": "geometry",
             "stylers": [{
-                "color": "#ffffff"
+                "color": "#e5e5e5"
             }]
         }, {
             "featureType": "road.arterial",
@@ -131,13 +131,13 @@ function initMap() {
             "featureType": "road.highway",
             "elementType": "labels.text.fill",
             "stylers": [{
-                "color": "#616161"
+
             }]
         }, {
             "featureType": "road.local",
             "elementType": "labels",
             "stylers": [{
-                "visibility": "off"
+                "color": "#616161"
             }]
         }, {
             "featureType": "road.local",
@@ -549,12 +549,7 @@ $(".black_box").css("height","0");
 
 }
 
-// Keep track of clicked keys
-var isKeyPressed = {
-    'a': false, // ASCII code for 'a'
-    'b': false, // ASCII code for 'b'
- // ... Other keys to check for custom key combinations
-};
+
 
 
 $('.readmore_click').click(function(){
@@ -583,6 +578,8 @@ else{
 }
 
 });
+
+
 
 
 
