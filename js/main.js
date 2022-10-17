@@ -549,6 +549,37 @@ $(".black_box").css("height","0");
 
 }
 
+// Keep track of clicked keys
+var isKeyPressed = {
+    'a': false, // ASCII code for 'a'
+    'b': false, // ASCII code for 'b'
+ // ... Other keys to check for custom key combinations
+};
+ 
+document.onkeydown = (keyDownEvent) => {
+  
+ //Prevent default key actions, if desired
+ keyDownEvent.preventDefault();
+  
+// Track down key click
+ isKeyPressed[keyDownEvent.key] = true;
+  
+// Check described custom shortcut
+if (isKeyPressed["a"] && isKeyPressed["b"])  //for example we want to check if a and b are clicked at the same time
+ //do something as custom shortcut (a & b) is clicked
+
+alert("fer");
+};
+  
+document.onkeyup = (keyUpEvent) => {
+  
+ // Prevent default key actions, if desiredab
+ keyUpEvent.preventDefault();
+  
+ // Track down key release
+ isKeyPressed[keyDownEvent.key] = false;
+};
+
 
 $('.readmore_click').click(function(){
 
@@ -577,13 +608,6 @@ else{
 
 });
 
-
-$('li').click(function(){
-
- alert('sa');
-
-});
-  
 
 
 
