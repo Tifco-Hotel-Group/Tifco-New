@@ -2122,3 +2122,26 @@ i.fas.hamburger_hit.fa-bars.fa-3x {
     background-color: transparent;
     margin: 0 auto;
 }
+
+.cd-timeline-content {
+    position: relative;
+}
+
+.cd-timeline-content img {
+    width: 100%;
+}
+
+.cd-timeline-content h2 {
+    display: none;
+}
+
+.cd-timeline-content p {
+    bottom: 0;
+    background: #fff;
+    color: #000;
+    opacity: 0.9;
+    padding: 10px 0px;
+    border: 1px solid #fff;
+    border-radius: 0 10px 10px 0;
+    font-weight: bolder;
+}
