@@ -1492,9 +1492,7 @@ section.careers_banner, section.careers_banner .row {
 p.header_text {
     text-align: center;
     font-size: 48px;
-    margin-top: 300px;
-    font-style: italic;
-}
+    margin-top: 300px;}
 
 .grow .row.row_of_three {
     padding: 20px 0;
